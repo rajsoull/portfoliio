@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    border-bottom: 1px solid black;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.nav h4{
+    font-size: 1.4vw;
+}
+
+.nav button{
+    font-size: 1vw;
+    padding: 0.7vw 1.4vw;
+    background-color: #FF735C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+.nav button:hover{
+    background-color: blueviolet;
+}
+
+.nav i{
+    display: none;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 55%;
+    padding: 5vw 4vw;
+}
+
+.left h1{
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+
+.left h1 span{
+    color: #FF735C;
+}
+
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+}
+
+.left .btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.content .btn{
+    font-size: 1vw;
+    padding: 1vw 1.5vw;
+    background-color: #FF735C;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.content .btn:hover{
+    background-color: blueviolet;
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+.training-section{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.training-section h1{
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+.container{
+    display: flex;
+    width:1170px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+img{
+    padding: 10px 80px;
+    width: 70px;
+}
+
+.training-items{
+    flex-basis: 23%;
+    margin: 10px 0px;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px lightgray;
+}
+
+.training-items button{
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.training-items:hover button{
+    color: blue;
+    background: white;
+}
+
+.training-items:hover{
+    font-size: 16.5px;
+    background-color: lightblue;
+}
+
+.training-items h3{
+    padding: 10px 0px;
+}
+
+.training-items:hover h3{
+    color: white;
+}
+
+
+
+.training-items p{
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.boxxx{
+    margin-top: 3vw;
+    width: 100%;
+    height: auto;
+}
+
+.footer-rights{
+    text-align: center;
+    color: gray;
+    padding: 20px 0;
+    font-size: 1.3vw;
+}
+
+
+@media (max-width:600px) {
+    .footer-rights{
+        font-size: 6vw;
+    }
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .training-items{
+        margin: 10px;
+    }
+}
+
+
+
+@media (max-width:600px) {
+    .nav{
+        padding: 0 6vw;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 5.1vw;
+    }
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav button{
+        display: none;
+    }
+    .nav i{
+        display: block;
+        font-size: 5vw;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 45%;
+        padding: 4vw 6vw;
+    }
+    .right{
+        width: 100%;
+        height: 55%;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    .left p{
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+    .content .btn{
+        padding: 2.5vw 4vw;
+        border-radius: 3px;
+        font-weight: 600;
+        font-size: 3.5vw;
+    }
+}
